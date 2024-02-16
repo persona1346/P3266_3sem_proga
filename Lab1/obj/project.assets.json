@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mi\\Desktop\\BosoevaElviraLab1\\BosoevaElviraLab1.csproj",
+      "projectUniqueName": "C:\\Users\\mi\\Desktop\\Sharpy\\BosoevaElvira\\Lab1\\BosoevaElviraLab1.csproj",
       "projectName": "BosoevaElviraLab1",
-      "projectPath": "C:\\Users\\mi\\Desktop\\BosoevaElviraLab1\\BosoevaElviraLab1.csproj",
+      "projectPath": "C:\\Users\\mi\\Desktop\\Sharpy\\BosoevaElvira\\Lab1\\BosoevaElviraLab1.csproj",
       "packagesPath": "C:\\Users\\mi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mi\\Desktop\\BosoevaElviraLab1\\obj\\",
+      "outputPath": "C:\\Users\\mi\\Desktop\\Sharpy\\BosoevaElvira\\Lab1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mi\\AppData\\Roaming\\NuGet\\NuGet.Config"
