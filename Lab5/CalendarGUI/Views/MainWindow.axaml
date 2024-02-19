@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CalendarGUI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="CalendarGUI.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="CalendarGUI">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid>
+        <ListBox Name="dateListBox" ItemsSource ="{Binding Dates}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding year}" Margin="5"/>
+                        <TextBlock Text="{Binding month}" Margin="5"/>
+                        <TextBlock Text="{Binding day}" Margin="5"/>
+                        <TextBlock Text="{Binding IsLeapYear}" Margin="5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox Name="yearTextBox" Text="{Binding Year}" />
+            <TextBox Name="monthTextBox" Text="{Binding Month}" />
+            <TextBox Name="dayTextBox" Text="{Binding Day}" />
+            <Button Content="Add Date" Command="{Binding AddDate}"/>
+        </StackPanel>
+    </Grid>
+
+</Window>
